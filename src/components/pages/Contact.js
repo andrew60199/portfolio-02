@@ -26,21 +26,23 @@ export default function Contact() {
     }
 
     return (
-        <div className='form-container'>
-            <h2>Contact form coming soon... 📧</h2>
-            <form onSubmit={handleGetInContact}>
-                <label htmlFor='name'>Name:</label>
-                <input type='text' id='name' placeholder='Please enter your name' onChange={(event) => setName(event.target.value)} required/>
-                <label htmlFor='email'>Email:</label>
-                <input type='text' id='email' placeholder='Whats your email?' onChange={(event) => setEmail(event.target.value)} required/>
-                <label htmlFor='message'>Message:</label>
-                <textarea type='text' id='message' placeholder='Enter a message here' onChange={(event) => setMessage(event.target.value)} required></textarea>
-                <input type="submit" className="button" value='Get in contact'/>
-            </form>
-            {errorMessage && (
-                <p className="error-text">{errorMessage}</p>
-            )}
-        </div>
+        <section id="contact-form">
+            <div className="work">
+                <h2>Contact form coming soon... 📧</h2>
+                <form onSubmit={handleGetInContact}>
+                    <label htmlFor='name'>Name:</label>
+                    <input type='text' id='name' placeholder='Please enter your name' onChange={(event) => setName(event.target.value)} required/>
+                    <label htmlFor='email'>Email:</label>
+                    <input type='text' id='email' placeholder='Whats your email?' onChange={(event) => setEmail(event.target.value)} required/>
+                    <label htmlFor='message'>Message:</label>
+                    <textarea type='text' id='message' placeholder='Enter a message here' onChange={(event) => setMessage(event.target.value)} required></textarea>
+                    <input type="submit" className="button-2" value='Get in contact'/>
+                </form>
+                {errorMessage && (
+                    <p className="error-text">{errorMessage}</p>
+                )}
+            </div>
+        </section>
         
     );
 }

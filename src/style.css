@@ -94,7 +94,13 @@ li {
     padding: 0 .5rem;
 }
 
-.button {
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.button,
+.button-2 {
     display: flex;
     width: 100%;
     margin-bottom: 2rem;
@@ -108,8 +114,12 @@ li {
     border: none;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0 .25rem;
-    cursor: pointer;
+    margin: 0 .25rem;  
+}
+
+.button-2 {
+    margin-top: 2rem;
+    background-color: white; 
 }
 
 /* Link order - visited, focus, hover, active */
@@ -169,6 +179,7 @@ p {
 
 /* Work section */
 
+#contact-form,
 #work {
     display: flex;
     flex-wrap: wrap;
@@ -181,8 +192,14 @@ p {
     width: 100%;
     height: auto;
     padding: 2rem;
-    
 }
+
+#contact-form,
+#work {
+    text-align: left;
+}
+
+
 .work {
     position: relative;
     width: 38%;     
