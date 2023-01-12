@@ -45,6 +45,18 @@ header {
     margin-bottom: 2rem;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
 .developer-photo {
     width: 10%;
     height: auto;
@@ -72,9 +84,14 @@ ul {
     align-items: center;
 }
 
+li {
+    width: 25%;
+    padding: 0 .5rem;
+}
+
 .button {
     display: flex;
-    width: 30%;
+    width: 100%;
     margin-bottom: 2rem;
     justify-content: center;
     color:black;
@@ -86,6 +103,7 @@ ul {
     border-radius: 1rem;
     padding: 1rem;
     margin: 0 .25rem;
+    cursor: pointer;
 }
 
 /* Link order - visited, focus, hover, active */
@@ -96,6 +114,23 @@ ul {
 
 .button:hover {
     background-color: rgb(60, 60, 60);
+}
+
+.active-button {
+    background-color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--font);
+    font-weight: bold;;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 .25rem;
+    cursor: pointer;
 }
 
 /* About section */
