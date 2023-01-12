@@ -27,7 +27,7 @@ export default function Contact() {
 
     return (
         <section id="contact-form">
-            <div className="work">
+            <div className="work-2">
                 <h2>Contact form coming soon... 📧</h2>
                 <form onSubmit={handleGetInContact}>
                     <label htmlFor='name'>Name:</label>

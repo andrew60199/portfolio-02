@@ -34,6 +34,15 @@ export default function Portfolio() {
                 ]}
             />
 
+            {/* <Project 
+                name=""
+                image=""
+                imageLink=""
+                content={[
+                    "", ""
+                ]}
+            /> */}
+
             <div className="coming-soon">
                 <h3 >Coming soon</h3>
                 <p>There is some more projects in the works. Of which I will share with the world soon.</p>

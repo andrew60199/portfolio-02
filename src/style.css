@@ -194,8 +194,7 @@ p {
     padding: 2rem;
 }
 
-#contact-form,
-#work {
+.work-2 {
     text-align: left;
 }
 
@@ -251,7 +250,7 @@ textarea {
 
 #contact {
     width: 100%;
-    height: 250px;
+    height: 350px;
     margin: 4rem 0;   
 }
 
