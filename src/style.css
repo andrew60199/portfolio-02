@@ -32,8 +32,25 @@ p {
     font-family: var(--font);
 }
 
+.error-text {
+    padding-top: 2rem;
+    font-weight: 700;
+}
+
 /* Navigation */
 header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -72,9 +89,20 @@ ul {
     align-items: center;
 }
 
-.button {
+li {
+    width: 25%;
+    padding: 0 .5rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.button,
+.button-2 {
     display: flex;
-    width: 30%;
+    width: 100%;
     margin-bottom: 2rem;
     justify-content: center;
     color:black;
@@ -83,9 +111,15 @@ ul {
     font-weight: bold;;
     height: 100%;
     background-color: rgb(220, 220, 220);
+    border: none;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0 .25rem;
+    margin: 0 .25rem;  
+}
+
+.button-2 {
+    margin-top: 2rem;
+    background-color: white; 
 }
 
 /* Link order - visited, focus, hover, active */
@@ -98,6 +132,23 @@ ul {
     background-color: rgb(60, 60, 60);
 }
 
+.active-button {
+    background-color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--font);
+    font-weight: bold;;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 .25rem;
+    cursor: pointer;
+}
+
 /* About section */
 .about {
     display: flex;
@@ -106,7 +157,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: rgb(242, 133, 0);
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .content {
@@ -127,13 +178,8 @@ p {
 }
 
 /* Work section */
-.layered-bg {
-    background-color: rgb(220, 220, 220);
-    border-radius: 100px 100px 0 0;
-    width: 100%;
-    height: 550px;
-}
 
+#contact-form,
 #work {
     display: flex;
     flex-wrap: wrap;
@@ -142,12 +188,17 @@ p {
     align-items: center;
     text-align: center;
     background-color: rgb(220, 220, 220);
-    border-radius: 0 0 100px 100px;
+    border-radius: 50px;
     width: 100%;
     height: auto;
     padding: 2rem;
-    
 }
+
+.work-2 {
+    text-align: left;
+}
+
+
 .work {
     position: relative;
     width: 38%;     
@@ -179,9 +230,27 @@ figcaption {
 }
 
 /* Contact section */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 20rem;
+}
+
+label,
+input,
+textarea {
+    margin: .5rem 0;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
 #contact {
     width: 100%;
-    height: 250px;
+    height: 350px;
     margin: 4rem 0;   
 }
 
@@ -217,6 +286,10 @@ figcaption {
         width: 80%;
     }
 
+    .form-container {
+        margin: 0 10rem;
+    }
+
     .supporting,
     .coming-soon {
         width: 65%;
@@ -236,6 +309,10 @@ figcaption {
 
     .work {
         width: 99%;
+    }
+
+    .form-container {
+        margin: 0 1.5rem;
     }
 
     .supporting,
