@@ -12,6 +12,16 @@ export default function Footer() {
                     <p><strong>Linkedin:</strong> Andrew Beissmann</p>
                 </div>
             </a>
+            <a href="https://github.com/andrew60199" target="_blank" rel="noopener noreferrer"> 
+                <div className="ex-link">
+                    <p><strong>GitHub:</strong> AND.evv</p>
+                </div>
+            </a>
+            <a href="https://twitter.com/AndrewBeissmann" target="_blank" rel="noopener noreferrer"> 
+                <div className="ex-link">
+                    <p><strong>Twitter:</strong> @AndrewBeissmann</p>
+                </div>
+            </a>
         </footer>
     )
 }
