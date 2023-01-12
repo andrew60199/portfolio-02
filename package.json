@@ -2,12 +2,16 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "dependencies": { 
+  "homepage": "https://andrew60199.github.io/portfolio-02",
+  "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
